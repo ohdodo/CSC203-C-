@@ -173,7 +173,7 @@ void qprintArray(int arr[], int n){
 void qprintSubArray(int arr[], int start, int end, int highlight = -1) {
     for (int i = start; i <= end; i++) {
         if (i == highlight) {
-            cout << "[" << arr[i] << "] ";
+            cout << "\033[31m[" << arr[i] << "]\033[0m ";
         } else {
             cout << arr[i] << ' ';
         }
